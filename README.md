@@ -9,15 +9,17 @@ Optional flags:
 ```-p <1..INTMAX>``` Number of dent positions per key (default: P=8) \
 ```-d <1..INTMAX>``` Number of depths per key position (default: D=4) 
 
-The outputs files are automatically stored in ```results/``` with following names:
-``` results/lockchart-L{L}-K{K}-p{P}d{D}j{J}-t{timetag} ```
-where 
+The outputs files are automatically stored in ```results/``` with following naming convention
+
+```
+results/lockchart-L{L}-K{K}-p{P}d{D}j{J}-t{T}
 L = Number of locks
 K = Number of keys
 P = Number of dent positions per lock
 D = Number of depth layers
-J = Max depth jump between neighbouring positions
-
+J = Max jump in depth between neighbouring positions
+T = Timetag of generation 
+```
 # mechanical-master-key-CNF-generator
 
 A generator for Mechanical Master-Key Problems as CNF SAT formulas. Heavily based on Radomír Černochs ["Lock-chart solving"](https://github.com/cernoch/mks-dis/blob/master/LockChartSolvingWeb.pdf) (2017) and Martin Hořeňovskýs [Performance analysis of a
