@@ -8,8 +8,8 @@ import numpy as np
 import argparse
 
 
-show_lockchart=True   # show a pyplot rendering of the lockchart
-solve=True            # also solve the cnf
+show_lockchart=False   # show a pyplot rendering of the lockchart
+solve=False            # also solve the cnf
 solver="kissat"       # select the solver
 
 #Options for fancy print of solution verification
