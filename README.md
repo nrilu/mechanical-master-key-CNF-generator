@@ -1,7 +1,9 @@
 # Usage
-``` ./lockchart_to_cnf.py [-l] [-r] [-p] [-d] ```
+
+Run ``` ./lockchart_to_cnf.py```
 
 Optional flags:
+
 ```-l ``` Number of locks (default: L=50) \
 ```-r ``` Probablity for the randomized lock-charts. Per default the lock-charts are structured (default: r=0) \
 ```-p ``` Number of positions per key (default: P=8) \
