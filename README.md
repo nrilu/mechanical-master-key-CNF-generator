@@ -4,12 +4,19 @@ Run ``` ./lockchart_to_cnf.py```
 
 Optional flags:
 
-```-l ``` Number of locks (default: L=50) \
-```-r ``` Probablity for the randomized lock-charts. Per default the lock-charts are structured (default: r=0) \
-```-p ``` Number of positions per key (default: P=8) \
-```-d ``` Number of depths per key position (default: D=4) 
+```-l <1..INTMAX> ``` Number of locks (default: L=50) \
+```-r <0..1> ``` Probablity for the randomized lock-charts. Per default the lock-charts are structured (default: r=0) \
+```-p <1..INTMAX>``` Number of dent positions per key (default: P=8) \
+```-d <1..INTMAX>``` Number of depths per key position (default: D=4) 
 
-
+The outputs files are automatically stored in ```results/``` with following names:
+``` results/lockchart-L{L}-K{K}-p{P}d{D}j{J}-t{timetag} ```
+where 
+L = Number of locks
+K = Number of keys
+P = Number of dent positions per lock
+D = Number of depth layers
+J = Max depth jump between neighbouring positions
 
 # mechanical-master-key-CNF-generator
 
